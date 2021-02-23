@@ -1,0 +1,1 @@
+date && while true; do sleep $INTERVALO_SEC && curl -I http:teste.com --silent --connect-timeout 3 | grep HTTP | sed "s/^/$(date)  /"; done
